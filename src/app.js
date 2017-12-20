@@ -1,8 +1,10 @@
+// @flow
+
 import express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => {
+app.get('/', (req: express$Request, res: express$Response) => {
   res.send('ok');
 });
 
