@@ -18,7 +18,7 @@
     "precommit": "lint-staged"
   },
   "lint-staged": {
-    "*.js": ["git:add", "format", "lint:fix", "test"]
+    "*.js": ["format", "lint:fix", "test", "git:add"]
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
