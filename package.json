@@ -1,0 +1,47 @@
+{
+  "name": "node-app-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:ink8bit/node-app-boilerplate.git",
+  "author": "ink8bit <ink8bit@users.noreply.github.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "yarn build && node ./dist",
+    "dev": "nodemon --watch ./src --exec babel-node ./src",
+    "build": "babel --copy-files --out-dir dist --ignore __tests__ src",
+    "test": "jest __tests__/*",
+    "lint": "lint-staged",
+    "lint:fix": "yarn eslint --fix ./src",
+    "format": "yarn prettier --write \"src/*.js\"",
+    "git:add": "git add -A",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": ["git:add", "format", "lint:fix", "test"]
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.0.3",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-flow": "6.23.0",
+    "eslint": "4.13.1",
+    "eslint-config-airbnb-base": "12.1.0",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-plugin-flow": "2.29.1",
+    "eslint-plugin-flowtype": "2.40.1",
+    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-prettier": "2.4.0",
+    "flow-bin": "0.61.0",
+    "flow-typed": "2.2.3",
+    "husky": "0.14.3",
+    "jest": "22.0.3",
+    "lint-staged": "6.0.0",
+    "nodemon": "1.13.3",
+    "prettier": "1.9.2"
+  },
+  "dependencies": {
+    "express": "4.16.2"
+  }
+}
