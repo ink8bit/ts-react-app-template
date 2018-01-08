@@ -8,6 +8,8 @@ import routes from './routes';
 
 const app = express();
 
+app.use(express.static('public'));
+
 app.set('views', resolve(__dirname, 'views'));
 app.set('view engine', 'pug');
 
