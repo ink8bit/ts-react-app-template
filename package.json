@@ -22,37 +22,37 @@
   },
   "lint-staged": {
     "*.js": [
-      "format",
-      "lint:fix",
-      "test",
-      "git:add"
+      "yarn format",
+      "yarn lint:fix",
+      "yarn test",
+      "git add"
     ]
   },
   "devDependencies": {
     "babel-cli": "6.26.0",
-    "babel-core": "6.26.0",
-    "babel-eslint": "8.1.2",
+    "babel-core": "6.26.3",
+    "babel-eslint": "8.2.3",
     "babel-preset-env": "1.6.1",
     "babel-preset-flow": "6.23.0",
-    "eslint": "4.14.0",
+    "eslint": "4.19.1",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-config-prettier": "2.9.0",
     "eslint-plugin-flow": "2.29.1",
-    "eslint-plugin-flowtype": "2.40.1",
-    "eslint-plugin-import": "2.8.0",
-    "eslint-plugin-prettier": "2.4.0",
-    "flow-bin": "0.61.0",
-    "flow-typed": "2.2.3",
+    "eslint-plugin-flowtype": "2.46.3",
+    "eslint-plugin-import": "2.11.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "flow-bin": "0.71.0",
+    "flow-typed": "2.4.0",
     "husky": "0.14.3",
-    "jest": "22.0.3",
-    "lint-staged": "6.0.0",
-    "nodemon": "1.14.8",
-    "prettier": "1.9.2"
+    "jest": "22.4.3",
+    "lint-staged": "7.1.0",
+    "nodemon": "1.17.4",
+    "prettier": "1.12.1"
   },
   "dependencies": {
     "body-parser": "1.18.2",
-    "dotenv": "4.0.0",
-    "express": "4.16.2",
-    "pug": "2.0.0-rc.4"
+    "dotenv": "5.0.1",
+    "express": "4.16.3",
+    "pug": "2.0.3"
   }
 }
