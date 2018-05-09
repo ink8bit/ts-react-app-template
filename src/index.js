@@ -1,9 +1,9 @@
 // @flow
 
 import http from 'http';
-import https from 'https';
-import fs from 'fs';
-import path from 'path';
+// import https from 'https';
+// import fs from 'fs';
+// import path from 'path';
 import dotenv from 'dotenv';
 
 import app from './app';
@@ -20,6 +20,8 @@ dotenv.config({ path: 'variables.env' });
 
 // app.set('port', process.env.PORT || 3000);
 
+/*
+// FIXME
 const cert = fs.readFileSync(path.join(__dirname, '../', 'private/my.cert.pem'));
 const key = fs.readFileSync(path.join(__dirname, '../', 'private/my.key.pem'));
 
@@ -32,6 +34,7 @@ const options = {
 if (cert && key) {
   https.createServer(options, app).listen(5000);
 }
+*/
 
 http.createServer(app).listen(3000);
 
