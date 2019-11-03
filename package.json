@@ -5,6 +5,8 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "dev": "webpack-dev-server --port 3000 --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "type:check": "tsc --noEmit",
     "test": "jest",
     "test:update": "jest -u",
@@ -33,8 +35,13 @@
     "@babel/preset-react": "^7.6.3",
     "@babel/preset-typescript": "^7.6.0",
     "@types/jest": "^24.0.21",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.3",
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.5.0",
@@ -43,10 +50,19 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
+    "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
+    "style-loader": "^1.0.0",
+    "typescript": "^3.6.4",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  },
+  "dependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
   }
 }

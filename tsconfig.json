@@ -12,6 +12,7 @@
     "noFallthroughCasesInSwitch": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
+    "jsx": "react"
   },
 
   "include": [
@@ -21,5 +22,7 @@
   "exclude": [
     "node_modules",
     "**/*.test.ts",
+    "webpack.dev.js",
+    "webpack.prod.js"
   ]
 }
