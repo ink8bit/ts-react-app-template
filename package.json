@@ -12,7 +12,8 @@
     "test:update": "jest -u",
     "test:coverage": "jest --coverage",
     "lint": "eslint --quiet",
-    "format": "prettier \"**/*.{js,ts,json}\" --write --only-changed"
+    "lint:css": "stylelint --fix",
+    "format": "prettier --write --only-changed"
   },
   "husky": {
     "hooks": {
