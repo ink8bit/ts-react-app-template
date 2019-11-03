@@ -24,6 +24,7 @@
     "**/*.test.ts",
     "webpack.dev.js",
     "webpack.prod.js",
-    "**/*.css"
+    "**/*.css",
+    "__mocks__",
   ]
 }
