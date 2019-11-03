@@ -23,6 +23,7 @@
     "node_modules",
     "**/*.test.ts",
     "webpack.dev.js",
-    "webpack.prod.js"
+    "webpack.prod.js",
+    "**/*.css"
   ]
 }
