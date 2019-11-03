@@ -5,9 +5,17 @@
   "main": "index.js",
   "private": true,
   "scripts": {
+    "type:check": "tsc --noEmit",
     "test": "jest",
     "test:update": "jest -u",
-    "test:coverage": "jest --coverage"
+    "test:coverage": "jest --coverage",
+    "lint": "eslint --quiet",
+    "format": "prettier \"**/*.{js,ts,json}\" --write --only-changed"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged && npm run type:check && npm t"
+    }
   },
   "repository": {
     "type": "git",
@@ -35,7 +43,9 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
+    "husky": "^3.0.9",
     "jest": "^24.9.0",
+    "lint-staged": "^9.4.2",
     "prettier": "^1.18.2",
     "typescript": "^3.6.4"
   }
