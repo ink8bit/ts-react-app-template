@@ -4,7 +4,11 @@
   "description": "React app written with TypeScript",
   "main": "index.js",
   "private": true,
-  "scripts": {},
+  "scripts": {
+    "test": "jest",
+    "test:update": "jest -u",
+    "test:coverage": "jest --coverage"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ink8bit/ts-react-app.git"
@@ -16,6 +20,11 @@
   },
   "homepage": "https://github.com/ink8bit/ts-react-app#readme",
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "@babel/preset-typescript": "^7.6.0",
+    "@types/jest": "^24.0.21",
     "@typescript-eslint/eslint-plugin": "^2.6.0",
     "@typescript-eslint/parser": "^2.6.0",
     "eslint": "^6.6.0",
@@ -26,6 +35,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2",
     "typescript": "^3.6.4"
   }
