@@ -1,0 +1,29 @@
+{
+  "name": "ts-react-app",
+  "version": "0.0.0",
+  "description": "React app written with TypeScript",
+  "main": "index.js",
+  "private": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ink8bit/ts-react-app.git"
+  },
+  "author": "ink8bit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ink8bit/ts-react-app/issues"
+  },
+  "homepage": "https://github.com/ink8bit/ts-react-app#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.6.0",
+    "@typescript-eslint/parser": "^2.6.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.2.0",
+    "typescript": "^3.6.4"
+  }
+}
