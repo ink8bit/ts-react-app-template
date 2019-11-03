@@ -13,7 +13,7 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint --quiet",
     "lint:css": "stylelint --fix",
-    "format": "prettier \"./src/**/*.{js,jsx,css,html,json}\" --write --only-changed"
+    "format": "prettier \"./src/**/*.{js,jsx,css,html}\" --write --only-changed"
   },
   "husky": {
     "hooks": {
