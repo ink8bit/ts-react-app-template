@@ -13,7 +13,7 @@
     "test:coverage": "jest --coverage",
     "lint": "eslint --quiet",
     "lint:css": "stylelint --fix",
-    "format": "prettier --write --only-changed"
+    "format": "prettier \"./src/**/*.{js,jsx,css,html,json}\" --write --only-changed"
   },
   "husky": {
     "hooks": {
@@ -53,6 +53,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.2.0",
+    "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "husky": "^3.0.9",
     "jest": "^24.9.0",
@@ -61,6 +62,7 @@
     "react-test-renderer": "^16.11.0",
     "style-loader": "^1.0.0",
     "typescript": "^3.6.4",
+    "url-loader": "^2.2.0",
     "webpack": "^4.41.2",
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.9.0"
