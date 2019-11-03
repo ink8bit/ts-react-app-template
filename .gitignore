@@ -1,0 +1,16 @@
+node_modules/
+coverage/
+public/
+.idea/
+.vscode/
+.atom*
+
+.DS_Store
+
+*.log
+
+build
+dist
+lib
+
+tsconfig.tsbuildinfo
