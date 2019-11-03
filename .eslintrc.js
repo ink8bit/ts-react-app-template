@@ -15,7 +15,13 @@ module.exports = {
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#extending-configuration-files}
    */
-  extends: ['airbnb', 'plugin:import/errors', 'plugin:@typescript-eslint/recommended'],
+  extends: [
+    'airbnb',
+    'plugin:import/errors',
+    'plugin:@typescript-eslint/recommended',
+    'prettier',
+    'prettier/@typescript-eslint',
+  ],
 
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-globals}
@@ -55,7 +61,7 @@ module.exports = {
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-plugins}
    */
-  plugins: ['react', '@typescript-eslint', 'import'],
+  plugins: ['react', '@typescript-eslint', 'import', 'prettier'],
 
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#configuring-rules}
