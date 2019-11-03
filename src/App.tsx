@@ -1,8 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-function App() {
-  return <h1>Hello</h1>;
-}
+import Header from './components/Header';
+
+const App: React.FunctionComponent<{}> = () => {
+  return (
+    <>
+      <h1>Hello</h1>
+      <Header />
+    </>
+  );
+};
 
 ReactDOM.render(<App />, document.getElementById('root'));
