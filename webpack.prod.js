@@ -5,6 +5,7 @@ const path = require('path');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   /**
@@ -27,11 +28,11 @@ module.exports = {
    */
   output: {
     path: path.join(__dirname, 'build'),
-    filename: 'bundle.js',
+    filename: 'bundle.js'
   },
 
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx', '.json', '.css']
   },
 
   /**
@@ -42,7 +43,7 @@ module.exports = {
       {
         test: /\.[j,t]sx?$/,
         exclude: /node_modules/,
-        loader: 'babel-loader',
+        loader: 'babel-loader'
       },
 
       {
@@ -55,10 +56,10 @@ module.exports = {
              */
             loader: 'css-loader',
             options: {
-              modules: true,
-            },
-          },
-        ],
+              modules: true
+            }
+          }
+        ]
       },
 
       {
@@ -67,12 +68,12 @@ module.exports = {
           {
             loader: 'url-loader',
             options: {
-              limit: 8192,
-            },
-          },
-        ],
-      },
-    ],
+              limit: 8192
+            }
+          }
+        ]
+      }
+    ]
   },
 
   /**
@@ -88,18 +89,38 @@ module.exports = {
      * @see {@link https://webpack.js.org/plugins/html-webpack-plugin/}
      */
     new HtmlWebpackPlugin({
-      template: './src/index.ejs',
-    }),
+      template: './src/index.ejs'
+    })
   ],
 
   /**
    * @see {@link https://webpack.js.org/configuration/optimization/}
    */
   optimization: {
+    /**
+     * SplitChunksPlugin
+     * @see {@link https://webpack.js.org/plugins/split-chunks-plugin/}
+     */
     splitChunks: {
       chunks: 'all',
       maxSize: 250000,
-      minSize: 0,
+      minSize: 0
     },
-  },
+
+    minimize: true,
+    minimizer: [
+      /**
+       * TerserPlugin
+       * @see {@link https://webpack.js.org/plugins/terser-webpack-plugin/}
+       */
+      new TerserPlugin({
+        terserOptions: {
+          output: {
+            comments: false
+          }
+        },
+        extractComments: false
+      })
+    ]
+  }
 };
