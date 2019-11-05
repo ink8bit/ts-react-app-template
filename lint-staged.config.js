@@ -3,5 +3,6 @@
  */
 module.exports = {
   '**/*.[j,t]s': ['npm run format', 'npm run lint', 'git add'],
+  '**/*.[j,t]sx': ['npm run format', 'npm run lint', 'git add'],
   '**/*.css': ['npm run format', 'npm run lint:css', 'git add']
 };
