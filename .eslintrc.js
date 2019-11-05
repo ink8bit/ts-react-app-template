@@ -9,7 +9,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jest: true,
+    jest: true
   },
 
   /**
@@ -20,7 +20,7 @@ module.exports = {
     'plugin:import/errors',
     'plugin:@typescript-eslint/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
+    'prettier/@typescript-eslint'
   ],
 
   /**
@@ -28,7 +28,7 @@ module.exports = {
    */
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
+    SharedArrayBuffer: 'readonly'
   },
 
   /**
@@ -37,9 +37,9 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.ts', '.jsx', '.tsx'],
-      },
-    },
+        extensions: ['.js', '.ts', '.jsx', '.tsx']
+      }
+    }
   },
 
   /**
@@ -52,10 +52,10 @@ module.exports = {
    */
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
     ecmaVersion: 2018,
-    sourceType: 'module',
+    sourceType: 'module'
   },
 
   /**
@@ -69,6 +69,6 @@ module.exports = {
   rules: {
     'arrow-parens': ['error', 'always'],
     'no-console': 'error',
-    'react/jsx-filename-extension': [0, { extensions: ['.js', '.jsx'] }],
-  },
+    'react/jsx-filename-extension': [0, { extensions: ['.js', '.jsx'] }]
+  }
 };
