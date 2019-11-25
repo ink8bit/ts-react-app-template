@@ -1,6 +1,6 @@
 {
   "name": "ts-react-app",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "React app written with TypeScript",
   "main": "index.js",
   "private": true,
