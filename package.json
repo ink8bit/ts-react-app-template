@@ -1,7 +1,7 @@
 {
   "name": "ts-react-app",
   "version": "0.12.0",
-  "description": "React app written with TypeScript",
+  "description": "TypeScript React app template",
   "main": "index.js",
   "private": true,
   "scripts": {
