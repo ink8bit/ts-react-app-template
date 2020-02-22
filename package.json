@@ -7,18 +7,16 @@
   "scripts": {
     "dev": "webpack-dev-server --port 3000 --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "type:check": "tsc --noEmit",
-    "test": "jest",
+    "types:check": "tsc --noEmit",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx .",
+    "lint:css": "stylelint \"src/**/*.css\"",
+    "prettier": "prettier \"./src/**/*.{js,jsx,ts,tsx,css,html}\"",
+    "format": "npm run prettier -- --write",
+    "format:check": "npm run prettier -- --list-different",
+    "test": "jest --forceExit",
     "test:update": "jest -u",
-    "test:coverage": "jest --coverage",
-    "lint": "eslint --quiet",
-    "lint:css": "stylelint --fix",
-    "format": "prettier \"./src/**/*.{js,jsx,css,html}\" --write --only-changed"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged && npm run type:check && npm t"
-    }
+    "test:watch": "npm t -- --watch",
+    "test:ci": "npm t -- --config jest.config.ci.js"
   },
   "repository": {
     "type": "git",
@@ -42,6 +40,7 @@
     "@types/react-test-renderer": "^16.9.2",
     "@typescript-eslint/eslint-plugin": "^2.20.0",
     "@typescript-eslint/parser": "^2.20.0",
+    "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.4.2",

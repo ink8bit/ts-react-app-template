@@ -2,7 +2,7 @@
  * @see {@link https://github.com/okonet/lint-staged#configuration}
  */
 module.exports = {
-  '**/*.[j,t]s': ['npm run format', 'npm run lint', 'git add'],
-  '**/*.[j,t]sx': ['npm run format', 'npm run lint', 'git add'],
-  '**/*.css': ['npm run format', 'npm run lint:css', 'git add']
+  '**/*.ts?x': ['tsx', 'prettier --write', 'eslint --fix'],
+  '**/*.js?x': ['prettier --write', 'eslint --fix'],
+  '**/*.css': ['prettier --write', 'stylelint --fix']
 };
