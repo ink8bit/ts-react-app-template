@@ -38,7 +38,7 @@ configuration:
 
 # Add `styles` label to any change in *.css files
 styles:
-  - *.css
+  - '**/*.css'
 
 # Add `package` label to any change in package.json
 package:
