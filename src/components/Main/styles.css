@@ -1,0 +1,8 @@
+.main {
+  background: lightgoldenrodyellow;
+  padding: var(--offset);
+}
+
+.title {
+  margin: 0;
+}

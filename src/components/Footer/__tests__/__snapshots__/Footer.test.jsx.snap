@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+<footer
+  className="footer"
+>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    Footer link 1
+  </a>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    Footer link 2
+  </a>
+  <a
+    aria-current="page"
+    href="/"
+    onClick={[Function]}
+  >
+    Footer link 3
+  </a>
+</footer>
+`;

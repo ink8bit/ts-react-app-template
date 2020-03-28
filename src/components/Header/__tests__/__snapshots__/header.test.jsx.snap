@@ -9,7 +9,7 @@ exports[`snapshot 1`] = `
     href="/"
     onClick={[Function]}
   >
-    Link
+    Header link
   </a>
 </header>
 `;
