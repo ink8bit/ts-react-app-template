@@ -1,15 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Header from './components/Header';
-
-import s from './global-styles.css';
+import Header from '../Header';
+import Footer from '../Footer';
+import Main from '../Main';
+import './reset.css';
+import s from './styles.css';
 
 const App: React.FunctionComponent<{}> = () => {
   return (
     <div className={s.app}>
-      <h1>Hello</h1>
       <Header />
+      <Main />
+      <Footer />
     </div>
   );
 };

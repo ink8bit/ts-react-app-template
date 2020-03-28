@@ -21,7 +21,7 @@ module.exports = {
   /**
    * @see {@link https://webpack.js.org/configuration/entry-context/}
    */
-  entry: './src/App.tsx',
+  entry: './src/components/App/index.tsx',
 
   /**
    * @see {@link https://webpack.js.org/configuration/output/}

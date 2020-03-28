@@ -6,7 +6,7 @@ import s from './styles.css';
 const Header: React.FunctionComponent<{}> = () => {
   return (
     <header className={s.header}>
-      <Link to="/">Link</Link>
+      <Link to="/">Header link</Link>
     </header>
   );
 };

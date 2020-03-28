@@ -1,0 +1,20 @@
+:root {
+  --offset: 16px;
+}
+
+.app {
+  --header-height: 70px;
+  --footer-height: 100px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: var(--header-height) auto var(--footer-height);
+  height: 100vh;
+}
+
+.app *,
+.app *:before,
+.app *:after {
+  box-sizing: inherit;
+}
