@@ -1,4 +1,16 @@
 .footer {
   background: lightskyblue;
   padding: var(--offset);
+  display: grid;
+}
+
+.footer a {
+  align-self: center;
+  justify-self: center;
+}
+
+@media (min-width: 414px) {
+  .footer {
+    grid-template-columns: auto auto auto;
+  }
 }
