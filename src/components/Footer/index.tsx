@@ -1,9 +1,11 @@
+import type { ReactElement } from 'react';
+
 import React from 'react';
 import { Link } from '@reach/router';
 
 import s from './styles.css';
 
-const Footer: React.FunctionComponent<{}> = () => {
+function Footer(): ReactElement {
   return (
     <footer className={s.footer}>
       <Link to="/">Footer link 1</Link>
@@ -11,6 +13,6 @@ const Footer: React.FunctionComponent<{}> = () => {
       <Link to="/">Footer link 3</Link>
     </footer>
   );
-};
+}
 
 export default Footer;
