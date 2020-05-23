@@ -7,7 +7,7 @@ import Main from '../Main';
 import './reset.css';
 import s from './styles.css';
 
-const App: React.FunctionComponent<{}> = () => {
+function App() {
   return (
     <div className={s.app}>
       <Header />
@@ -15,7 +15,7 @@ const App: React.FunctionComponent<{}> = () => {
       <Footer />
     </div>
   );
-};
+}
 
 ReactDOM.render(
   <React.StrictMode>
