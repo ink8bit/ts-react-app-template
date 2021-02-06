@@ -1,4 +1,25 @@
 
+## 0.20.0
+
+### 6 Feb 2021 | Sat 14:43:38 MSK
+
+**Releaser:** @ink8bit
+
+```
+5be398d | @ink8bit: Fix tsconfig
+8fbdd29 | @ink8bit: Show bundle size
+534530b | @ink8bit: Fix rollup config
+a7a7fff | @ink8bit: Add postcss package
+cc4fd73 | @ink8bit: Turn off lint:css check
+bf838cc | @ink8bit: Remove postcss-loader
+15f7e59 | @ink8bit: Update lock file
+ba961be | @ink8bit: Change eslint parser value
+ef624c8 | @ink8bit: Remove template
+656d459 | @ink8bit: Add rollup
+9ae5236 | @ink8bit: Update node workflow
+7e85afe | @ink8bit: Update node version to v15
+```
+
 ## v0.18.0
 ### 22 Aug 2020 | Sat 18:41:11 MSK
 ```
