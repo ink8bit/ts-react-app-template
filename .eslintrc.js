@@ -9,7 +9,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
-    jest: true
+    jest: true,
   },
 
   /**
@@ -22,7 +22,7 @@ module.exports = {
    */
   globals: {
     Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly'
+    SharedArrayBuffer: 'readonly',
   },
 
   /**
@@ -31,25 +31,25 @@ module.exports = {
   settings: {
     'import/resolver': {
       node: {
-        extensions: ['.js', '.ts', '.jsx', '.tsx']
-      }
-    }
+        extensions: ['.js', '.ts', '.jsx', '.tsx'],
+      },
+    },
   },
 
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser}
    */
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
 
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-parser-options}
    */
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 2018,
-    sourceType: 'module'
+    sourceType: 'module',
   },
 
   /**
@@ -65,15 +65,15 @@ module.exports = {
       files: ['**/*.ts', '**/*.tsx'],
       parser: '@typescript-eslint/parser',
       parserOptions: {
-        project: './tsconfig.json'
+        project: './tsconfig.json',
       },
       plugins: ['@typescript-eslint/eslint-plugin'],
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
-        'eslint-config-prettier/@typescript-eslint'
-      ]
-    }
+        'eslint-config-prettier/@typescript-eslint',
+      ],
+    },
   ],
 
   /**
@@ -90,8 +90,8 @@ module.exports = {
         js: 'never',
         jsx: 'never',
         ts: 'never',
-        tsx: 'never'
-      }
-    ]
-  }
+        tsx: 'never',
+      },
+    ],
+  },
 };
