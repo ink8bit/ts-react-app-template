@@ -7,10 +7,12 @@ import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
 import image from '@rollup/plugin-image';
+import strip from '@rollup/plugin-strip';
 import html, { makeHtmlAttributes } from '@rollup/plugin-html';
 import livereload from 'rollup-plugin-livereload';
 import serve from 'rollup-plugin-serve';
-import strip from '@rollup/plugin-strip';
+import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
+import sizes from 'rollup-plugin-sizes';
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
@@ -104,6 +106,8 @@ export default {
 
     image(),
 
+    sizeSnapshot(),
+
     isProd && terser(terserConfig),
 
     html({
@@ -121,5 +125,7 @@ export default {
     // Watch the `build` directory and refresh the
     // browser on changes when not in production
     isDev && livereload(),
+
+    sizes({ details: true }),
   ],
 };
