@@ -10,9 +10,23 @@ import image from '@rollup/plugin-image';
 import html, { makeHtmlAttributes } from '@rollup/plugin-html';
 import livereload from 'rollup-plugin-livereload';
 import serve from 'rollup-plugin-serve';
+import strip from '@rollup/plugin-strip';
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
+
+const terserConfig = {
+  ecma: 2018,
+  format: {
+    comments: false,
+  },
+};
+
+const stripConfig = {
+  include: ['**/*.js', '**/*.ts', '**/*.jsx', '**/*.tsx'],
+  functions: ['console.*'],
+  exclude: ['node_modules'],
+};
 
 function htmlTemplate({ attributes, files, publicPath, meta, title }) {
   const scripts = (files.js || [])
@@ -63,13 +77,13 @@ export default {
   },
 
   plugins: [
+    isProd && strip(stripConfig),
+
     replace({
       'process.env.NODE_ENV': isProd ? JSON.stringify('production') : JSON.stringify('development'),
     }),
 
-    typescript({
-      sourceMap: isDev,
-    }),
+    typescript({ sourceMap: isDev }),
 
     babel({ babelHelpers: 'bundled', compact: true }),
 
@@ -77,6 +91,8 @@ export default {
       plugins: [cssnano()],
       extensions: ['.css'],
       autoModules: false,
+      sourceMap: isProd ? false : 'inline',
+      minimize: isProd,
       modules: {
         generateScopedName: isProd ? '[hash:base64]' : '[path][name]_[local]_[hash:base64:5]',
       },
@@ -85,6 +101,10 @@ export default {
     commonjs({ extensions: ['.js', '.ts', '.jsx', '.tsx'] }),
 
     nodeResolve({ browser: true }),
+
+    image(),
+
+    isProd && terser(terserConfig),
 
     html({
       title: 'React app',
@@ -101,9 +121,5 @@ export default {
     // Watch the `build` directory and refresh the
     // browser on changes when not in production
     isDev && livereload(),
-
-    isProd && terser(),
-
-    image(),
   ],
 };
