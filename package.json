@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/ink8bit/ts-react-app#readme",
   "devDependencies": {
-    "@babel/eslint-parser": "^7.12.13",
+    "@babel/eslint-parser": "^7.12.16",
     "@babel/plugin-proposal-class-properties": "^7.12.1",
     "@babel/preset-env": "^7.12.16",
     "@babel/preset-react": "^7.12.10",
