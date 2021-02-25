@@ -72,7 +72,7 @@
     "postcss": "^8.2.6",
     "prettier": "^2.2.1",
     "react-test-renderer": "^16.14.0",
-    "rollup": "^2.39.0",
+    "rollup": "^2.39.1",
     "rollup-plugin-livereload": "^2.0.0",
     "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-serve": "^1.1.0",
