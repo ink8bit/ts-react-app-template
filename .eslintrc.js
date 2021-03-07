@@ -15,7 +15,7 @@ module.exports = {
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#extending-configuration-files}
    */
-  extends: ['airbnb', 'plugin:import/errors', 'prettier', 'eslint-config-prettier'],
+  extends: ['airbnb', 'plugin:import/errors', 'prettier'],
 
   /**
    * @see {@link https://eslint.org/docs/user-guide/configuring#specifying-globals}
@@ -71,7 +71,7 @@ module.exports = {
       extends: [
         'plugin:@typescript-eslint/eslint-recommended',
         'plugin:@typescript-eslint/recommended',
-        'eslint-config-prettier/@typescript-eslint',
+        'prettier',
       ],
     },
   ],

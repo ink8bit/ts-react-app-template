@@ -83,6 +83,7 @@ export default {
 
     replace({
       'process.env.NODE_ENV': isProd ? JSON.stringify('production') : JSON.stringify('development'),
+      preventAssignment: true,
     }),
 
     typescript({ sourceMap: isDev }),
@@ -106,7 +107,7 @@ export default {
 
     image(),
 
-    sizeSnapshot(),
+    isProd && sizeSnapshot(),
 
     isProd && terser(terserConfig),
 
@@ -126,6 +127,6 @@ export default {
     // browser on changes when not in production
     isDev && livereload(),
 
-    sizes({ details: true }),
+    isProd && sizes({ details: true }),
   ],
 };
