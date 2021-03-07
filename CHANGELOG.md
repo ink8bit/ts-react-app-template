@@ -1,3 +1,15 @@
+## v0.21.0
+
+### Sun, 07 Mar 2021 17:07:04 +0300
+
+**Released by:** @ink8bit
+
+```
+a517d30 | ink8bit: Downgrade husky
+679dd36 | ink8bit: Update deps, fix configs
+d0e336f | ink8bit: Add tslib package
+```
+
 
 ## 0.20.0
 
