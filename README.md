@@ -34,7 +34,7 @@ This project follows semantic versioning. I release patch versions for critical 
 
 - [React](https://github.com/facebook/react/)
 - [Reach Router](https://github.com/reach/router#readme)
-- [Webpack](https://github.com/webpack/webpack)
+- [Rollup](https://rollupjs.org/guide/en/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
