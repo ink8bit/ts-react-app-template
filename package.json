@@ -36,7 +36,7 @@
   },
   "homepage": "https://github.com/ink8bit/ts-react-app#readme",
   "devDependencies": {
-    "@babel/eslint-parser": "^7.15.4",
+    "@babel/eslint-parser": "^7.15.7",
     "@babel/plugin-proposal-class-properties": "^7.13.0",
     "@babel/preset-env": "^7.15.0",
     "@babel/preset-react": "^7.14.5",
@@ -70,7 +70,7 @@
     "jest": "^26.6.3",
     "lint-staged": "^11.1.2",
     "postcss": "^8.3.6",
-    "prettier": "^2.3.2",
+    "prettier": "^2.4.1",
     "react-test-renderer": "^17.0.2",
     "rollup": "^2.56.3",
     "rollup-plugin-livereload": "^2.0.5",
