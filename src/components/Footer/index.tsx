@@ -1,7 +1,7 @@
 import type { ReactElement } from 'react';
 
 import React from 'react';
-import { Link } from '@reach/router';
+import { Link } from 'react-router-dom';
 
 import s from './styles.css';
 
