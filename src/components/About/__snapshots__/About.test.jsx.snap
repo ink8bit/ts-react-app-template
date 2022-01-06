@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot 1`] = `
+Array [
+  <h1
+    className="title"
+  >
+    About
+  </h1>,
+  <div>
+    content
+  </div>,
+]
+`;
