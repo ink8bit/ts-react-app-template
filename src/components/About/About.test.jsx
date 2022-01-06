@@ -1,9 +1,9 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Main from '../index';
+import About from './index';
 
 test('snapshot', () => {
-  const c = create(<Main />);
+  const c = create(<About />);
   expect(c.toJSON()).toMatchSnapshot();
 });

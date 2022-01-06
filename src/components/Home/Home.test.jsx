@@ -1,9 +1,9 @@
 import React from 'react';
 import { create } from 'react-test-renderer';
 
-import Header from '../index';
+import Home from './index';
 
 test('snapshot', () => {
-  const c = create(<Header />);
+  const c = create(<Home />);
   expect(c.toJSON()).toMatchSnapshot();
 });
