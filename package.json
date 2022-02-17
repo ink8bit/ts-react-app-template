@@ -85,7 +85,7 @@
     "stylelint": "^14.5.1",
     "stylelint-config-recommended": "^7.0.0",
     "tslib": "^2.3.1",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.5"
   },
   "dependencies": {
     "classnames": "^2.3.1",
