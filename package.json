@@ -73,7 +73,7 @@
     "node-notifier": "^10.0.1",
     "postcss": "^8.4.8",
     "prettier": "^2.6.2",
-    "react-test-renderer": "^17.0.2",
+    "react-test-renderer": "^18.1.0",
     "rollup": "^2.70.1",
     "rollup-plugin-livereload": "^2.0.5",
     "rollup-plugin-postcss": "^4.0.2",
@@ -89,8 +89,8 @@
   },
   "dependencies": {
     "classnames": "^2.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0"
   }
 }
