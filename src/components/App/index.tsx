@@ -22,13 +22,17 @@ const node = document.getElementById('root');
 const root = node && createRoot(node);
 
 if (!root) {
-  throw new Error('root is undefined');
+  throw new Error('root is null');
 }
 
-root.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>
-);
+function Wrapper() {
+  return (
+    <React.StrictMode>
+      <Router>
+        <App />
+      </Router>
+    </React.StrictMode>
+  );
+}
+
+root.render(Wrapper());
