@@ -2,7 +2,7 @@ import babel from '@rollup/plugin-babel';
 import typescript from '@rollup/plugin-typescript';
 import postcss from 'rollup-plugin-postcss';
 import cssnano from 'cssnano';
-import { terser } from 'rollup-plugin-terser';
+import terser  from '@rollup/plugin-terser';
 import commonjs from '@rollup/plugin-commonjs';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
@@ -11,8 +11,6 @@ import strip from '@rollup/plugin-strip';
 import html, { makeHtmlAttributes } from '@rollup/plugin-html';
 import livereload from 'rollup-plugin-livereload';
 import serve from 'rollup-plugin-serve';
-import { sizeSnapshot } from 'rollup-plugin-size-snapshot';
-import sizes from 'rollup-plugin-sizes';
 
 const isProd = process.env.NODE_ENV === 'production';
 const isDev = !isProd;
@@ -107,8 +105,6 @@ export default {
 
     image(),
 
-    isProd && sizeSnapshot(),
-
     isProd && terser(terserConfig),
 
     html({
@@ -126,7 +122,5 @@ export default {
     // Watch the `build` directory and refresh the
     // browser on changes when not in production
     isDev && livereload(),
-
-    isProd && sizes({ details: true }),
   ],
 };
