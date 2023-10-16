@@ -3,7 +3,7 @@
  * @see {@link https://jestjs.io/docs/en/configuration}
  */
 module.exports = {
-  notify: true,
+  notify: false,
   bail: true,
   verbose: false,
   moduleNameMapper: {
