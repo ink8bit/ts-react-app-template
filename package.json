@@ -47,7 +47,7 @@
     "@rollup/plugin-html": "^1.0.2",
     "@rollup/plugin-image": "^3.0.2",
     "@rollup/plugin-node-resolve": "^15.1.0",
-    "@rollup/plugin-replace": "^5.0.4",
+    "@rollup/plugin-replace": "^5.0.5",
     "@rollup/plugin-strip": "^3.0.4",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.0.0",
