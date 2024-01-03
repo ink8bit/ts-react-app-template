@@ -51,7 +51,7 @@
     "@rollup/plugin-strip": "^3.0.4",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.0.0",
-    "@types/babel__traverse": "^7.20.4",
+    "@types/babel__traverse": "^7.20.5",
     "@types/jest": "^29.5.11",
     "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
