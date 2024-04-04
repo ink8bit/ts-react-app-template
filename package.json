@@ -39,7 +39,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "^7.24.1",
     "@babel/plugin-proposal-class-properties": "^7.16.0",
-    "@babel/preset-env": "^7.24.0",
+    "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
     "@babel/preset-typescript": "^7.23.3",
     "@rollup/plugin-babel": "^6.0.3",
