@@ -54,7 +54,7 @@
     "@types/babel__traverse": "^7.20.5",
     "@types/jest": "^29.5.12",
     "@types/react": "^18.2.77",
-    "@types/react-dom": "^18.2.24",
+    "@types/react-dom": "^18.2.25",
     "@types/react-router-dom": "^5.3.3",
     "@types/react-test-renderer": "^18.0.7",
     "@typescript-eslint/eslint-plugin": "^7.0.0",
