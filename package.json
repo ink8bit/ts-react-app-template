@@ -80,8 +80,8 @@
     "rollup-plugin-postcss": "^4.0.2",
     "rollup-plugin-serve": "^3.0.0",
     "serve": "^14.2.2",
-    "stylelint": "^15.11.0",
-    "stylelint-config-recommended": "^13.0.0",
+    "stylelint": "^16.5.0",
+    "stylelint-config-recommended": "^14.0.0",
     "tslib": "^2.6.1",
     "typescript": "^5.4.5"
   },
