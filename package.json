@@ -83,7 +83,7 @@
     "stylelint": "^15.11.0",
     "stylelint-config-recommended": "^13.0.0",
     "tslib": "^2.6.3",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.4"
   },
   "dependencies": {
     "classnames": "^2.5.1",
